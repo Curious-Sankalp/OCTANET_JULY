@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #808088 ;
+    color: white;
+    padding: 1em 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em;
+    height: 4rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 2em 1em;
+    background-color: #f4f4f4;
+}
+
+.hero-content {
+    max-width: 600px;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 2.5em;
+    margin-top: 0.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.model-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    padding: 2em 1em;
+}
+
+.model {
+    flex: 1 1 calc(33.333% - 2em);
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 1em;
+    text-align: center;
+}
+
+h2{
+    padding-left: 20px;
+}
+.features-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    padding: 2em 1em;
+}
+
+.feature {
+    flex: 1 1 calc(33.333% - 2em);
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 1em;
+}
+
+#contact {
+    background-color: #f4f4f4;
+    padding: 2em 1em;
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+}
+
+form button {
+    padding: 1em 2em;
+    border: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+@media (max-width: 768px) {
+    .model, .feature {
+        flex: 1 1 100%;
+    }
+}
